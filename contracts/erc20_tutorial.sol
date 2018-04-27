@@ -3,11 +3,11 @@ pragma solidity ^0.4.18;
 // ----------------------------------------------------------------------------
 // 'Tewst' token contract
 //
-// Deployed to : 0x41C694881B024a4098eB32D1ABFe0964fF515388
-// Symbol      : Tewst
-// Name        : Tewst Token
-// Total supply: 101
-// Decimals    : 17
+// Deployed to : 0x6B8f00F65f6b34b391fbEC010ed011dC0CA0918c
+// Symbol      : RealTewst
+// Name        : Real Tewst Token
+// Total supply: 11
+// Decimals    : 0
 //
 // Enjoy.
 //
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract TewstToken is ERC20Interface, Owned, SafeMath {
+contract RealTewstToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -112,13 +112,13 @@ contract TewstToken is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function TewstToken() public {
-        symbol = "TEWST";
-        name = "Tewst Token";
-        decimals = 17;
-        _totalSupply = 10100000000000000000;
-        balances[0x41C694881B024a4098eB32D1ABFe0964fF515388] = _totalSupply;
-        Transfer(address(0), 0x41C694881B024a4098eB32D1ABFe0964fF515388, _totalSupply);
+    function RealTewstToken() public {
+        symbol = "RTEWST";
+        name = "Real Tewst Token";
+        decimals = 0;
+        _totalSupply = 11;
+        balances[0x6B8f00F65f6b34b391fbEC010ed011dC0CA0918c] = _totalSupply;
+        Transfer(address(0), 0x6B8f00F65f6b34b391fbEC010ed011dC0CA0918c, _totalSupply);
     }
 
 
